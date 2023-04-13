@@ -16,7 +16,7 @@ public class HomePageControl : MonoBehaviour
     }
     public void PlayBtn()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void ExitGame()
