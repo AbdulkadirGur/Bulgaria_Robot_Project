@@ -9,12 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HomePage.unity
     guid: fa4da6e0e0669bb41bed07ed97383f3e
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: 373d7dc090365ac4b9c3ecfb5698c817
-  - enabled: 1
     path: Assets/Scenes/robot1.unity
     guid: ec08e77f3fe2774489988e4e1e37e631
+  - enabled: 1
+    path: Assets/Scenes/robot2.unity
+    guid: 59e99e85618d8e0418ff4088003a9623
   m_configObjects: {}

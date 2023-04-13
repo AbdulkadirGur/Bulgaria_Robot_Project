@@ -34,6 +34,7 @@ public class GameControl : MonoBehaviour
     //-----------------------
 
     public GameObject grid;
+    public GameObject gridText;
     public GameObject LevelPool;
     bool createState;
     int createCount;
@@ -141,9 +142,11 @@ public class GameControl : MonoBehaviour
         Time.timeScale = 1;
         
     }
+    int sayac = 1;
     public void NextLevel()
     {
-        SceneManager.LoadScene(2);
+        sayac++;
+        SceneManager.LoadScene(sayac);
     }
 
     public void buttonsState(bool state)  // coklu tiklamaya izin vermiyor tum butonlari kapatiyor
@@ -193,6 +196,8 @@ public class GameControl : MonoBehaviour
             chooseButton.GetComponent<UnityEngine.UI.Image>().enabled = false;
             itselfBTN.GetComponent<UnityEngine.UI.Image>().enabled = false;
             voices[0].Play();
+            gridText.SetActive(true);
+            
 
             //itselfBTN.GetComponent<UnityEngine.UI.Image>().enabled = false;
             // itselfBTN.GetComponent<UnityEngine.UI.Button>().enabled = false;
@@ -221,6 +226,12 @@ public class GameControl : MonoBehaviour
             buttonsState(true);
             numChoices = 0;
             chooseButton = null;
+            gridText.SetActive(true);
         }
+    }
+
+    public void NumberBtnClick()
+    {
+        gridText.SetActive(false); ;
     }
 }
