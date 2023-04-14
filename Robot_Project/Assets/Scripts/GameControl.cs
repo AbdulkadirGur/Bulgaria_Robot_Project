@@ -145,7 +145,10 @@ public class GameControl : MonoBehaviour
     int sayac = 1;
     public void NextLevel()
     {
-        if(sayac > 2)
+
+
+       
+        if (sayac > 3)
         {
             SceneManager.LoadScene(0);
         }
