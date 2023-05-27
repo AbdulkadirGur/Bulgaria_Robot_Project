@@ -161,8 +161,11 @@ public class GameControl : MonoBehaviour
     public void GetObjects(GameObject obj)
     {
         itselfBTN = obj;  // Assign the input object to the itselfBTN variable, representing the button object.
-        itselfBTN.GetComponent<UnityEngine.UI.Image>().sprite = itselfBTN.GetComponentInChildren<SpriteRenderer>().sprite;  // Set the sprite of the UnityEngine.UI.Image component of itselfBTN to the sprite of the SpriteRenderer component that is a child of itselfBTN. This ensures that the button displays the appropriate sprite visually.
-        itselfBTN.GetComponent<UnityEngine.UI.Image>().raycastTarget = false;  // Set the raycastTarget property of the UnityEngine.UI.Image component of itselfBTN to false, making the button non-clickable.
+        itselfBTN.GetComponent<UnityEngine.UI.Image>().sprite = itselfBTN.GetComponentInChildren<SpriteRenderer>().sprite;  // Set the sprite of the
+         // UnityEngine.UI.Image component of itselfBTN to the sprite of the SpriteRenderer component that is a child of itselfBTN. This ensures that the button
+         // displays the appropriate sprite visually.
+        itselfBTN.GetComponent<UnityEngine.UI.Image>().raycastTarget = false;  // Set the raycastTarget property of the UnityEngine.UI.Image component of itselfBTN
+                                                                               // to false, making the button non-clickable.
     }
 
     public void MyButtonClick(int value)
@@ -234,8 +237,6 @@ public class GameControl : MonoBehaviour
             gridText.SetActive(true);
         }
     }
-
-
     public void NumberBtnClick()
     {
         // Hide the grid text
